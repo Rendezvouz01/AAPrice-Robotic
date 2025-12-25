@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-robotics",
+      "description": "High-tech robotic arm in a futuristic factory setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1716191299980-a6e8827ba10b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb2JvdGljJTIwYXJtfGVufDB8fHx8MTc2NjYzNTA1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "robotic arm"
+    },
+    {
+      "id": "linear-robots",
+      "description": "Linear robot arm moving parts on a conveyor belt.",
+      "imageUrl": "https://images.unsplash.com/photo-1662900547519-eeb199360d3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb252ZXlvciUyMGJlbHR8ZW58MHx8fHwxNzY2Njk2NzgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "conveyor belt"
+    },
+    {
+      "id": "3d-printing",
+      "description": "Industrial 3D printer in operation.",
+      "imageUrl": "https://images.unsplash.com/photo-1705475025559-ad8efdedc74f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHwzZCUyMHByaW50ZXJ8ZW58MHx8fHwxNzY2Njk2NzgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "3d printer"
+    },
+    {
+      "id": "accessories",
+      "description": "Close-up of a robotic gripper end-effector.",
+      "imageUrl": "https://images.unsplash.com/photo-1653570449667-bdbac4010198?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxyb2JvdGljJTIwZ3JpcHBlcnxlbnwwfHx8fDE3NjY2OTY3ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "robotic gripper"
+    }
+  ]
 }

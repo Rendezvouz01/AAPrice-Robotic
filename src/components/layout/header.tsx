@@ -31,62 +31,50 @@ export function Header() {
           </span>
           <span className="font-bold font-headline sm:hidden">AAPrice</span>
         </Link>
-        <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-foreground/60 transition-colors hover:text-foreground/80"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+
         <div className="flex flex-1 items-center justify-end space-x-4">
-          <div className="md:hidden">
-            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu />
-                  <span className="sr-only">Toggle Menu</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent
-                side="right"
-                className="w-full max-w-xs bg-background"
-              >
-                <div className="flex h-full flex-col">
-                  <div className="flex items-center justify-between border-b p-4">
-                    <Link
-                      href="/"
-                      className="flex items-center space-x-2"
-                      onClick={() => setIsSheetOpen(false)}
-                    >
-                      <Cpu className="h-6 w-6 text-primary" />
-                      <span className="font-bold font-headline">AAPrice</span>
-                    </Link>
-                    <SheetClose asChild>
-                      <Button variant="ghost" size="icon">
-                        <X className="h-5 w-5" />
-                      </Button>
-                    </SheetClose>
-                  </div>
-                  <nav className="flex flex-col space-y-4 p-4">
-                    {navLinks.map((link) => (
-                      <Link
-                        key={link.href}
-                        href={link.href}
-                        onClick={() => setIsSheetOpen(false)}
-                        className="text-lg font-medium transition-colors hover:text-primary"
-                      >
-                        {link.label}
-                      </Link>
-                    ))}
-                  </nav>
+          <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu />
+                <span className="sr-only">Toggle Menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent
+              side="top"
+              className="w-full bg-background p-0"
+            >
+              <div className="flex h-full flex-col">
+                <div className="flex items-center justify-between border-b p-4">
+                  <Link
+                    href="/"
+                    className="flex items-center space-x-2"
+                    onClick={() => setIsSheetOpen(false)}
+                  >
+                    <Cpu className="h-6 w-6 text-primary" />
+                    <span className="font-bold font-headline">AAPrice</span>
+                  </Link>
+                  <SheetClose asChild>
+                    <Button variant="ghost" size="icon">
+                      <X className="h-5 w-5" />
+                    </Button>
+                  </SheetClose>
                 </div>
-              </SheetContent>
-            </Sheet>
-          </div>
+                <nav className="flex flex-col space-y-4 p-4">
+                  {navLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setIsSheetOpen(false)}
+                      className="text-lg font-medium text-center transition-colors hover:text-primary"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </nav>
+              </div>
+            </SheetContent>
+          </Sheet>
           <Button className="hidden md:flex" variant="outline">
             Request a Quote
           </Button>

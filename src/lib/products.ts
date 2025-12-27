@@ -1,44 +1,43 @@
-import type { ImagePlaceholder } from './placeholder-images';
-import { PlaceHolderImages } from './placeholder-images';
-
 export interface Product {
   id: string;
   name: string;
   description: string;
-  image: ImagePlaceholder;
-}
-
-const findImage = (id: string): ImagePlaceholder => {
-    const img = PlaceHolderImages.find(p => p.id === id);
-    if (!img) {
-        // Fallback for client-side rendering where images might not be available immediately
-        return {
-          id: 'fallback',
-          description: 'Loading image',
-          imageUrl: `https://picsum.photos/seed/${id}/600/400`,
-          imageHint: 'placeholder',
-        };
-    }
-    return img;
+  image: {
+    imageUrl: string;
+    description: string;
+    imageHint: string;
+  };
 }
 
 export const products: Product[] = [
   {
-    id: 'linear-robots',
-    name: 'Linear Robots',
-    description: 'Sophisticated linear robotics built for extreme precision and adaptable integration in the printing and production sectors.',
-    image: findImage('linear-robots'),
+    id: 'ZMorph VX Multitool 3D Printer',
+    name: 'ZMorph VX Multitool 3D Printer',
+    description: 'Advanced multi-axis fabrication system: Integrating high-resolution 3D printing, CNC, and laser engraving on a precision linear platform.',
+    image: {
+        description: 'Loading image',
+        imageUrl: `https://images.unsplash.com/photo-1563520240344-52b067aa5f84?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`,
+        imageHint: 'placeholder',
+    },
   },
   {
-    id: '3d-printing',
-    name: '3D Printing Machines',
-    description: 'High-performance 3D printing machines optimized for industrial-scale reliability and rapid prototyping.',
-    image: findImage('3d-printing'),
+    "id": "industrial-am-system",
+    "name": "Industrial AM System",
+    "description": "High-output additive manufacturing: Optimized for industrial reliability, rapid tooling, and high-precision functional prototyping.",
+    "image": {
+        "description": "Industrial 3D printer in operation.",
+        "imageUrl": "https://images.unsplash.com/photo-1741848263568-f72a439f7033?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "imageHint": "3d printer"
+    }
   },
   {
-    id: 'accessories',
-    name: 'Accessories',
-    description: 'Expand your capabilities with a wide range of accessories including end-effectors, grippers, and vision systems for seamless integration.',
-    image: findImage('accessories'),
+    "id": "modular-robotic-accessories",
+    "name": "Modular Robotic Accessories",
+    "description": "Precision integration components: A comprehensive suite of end-effectors, grippers, and vision systems for seamless automation workflows.",
+    "image": {
+        "description": "A collection of precision robotic components and accessories on a workbench.",
+        "imageUrl": "https://images.unsplash.com/photo-1704283860614-803aa8be7993?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "imageHint": "robotic components"
+    }
   },
 ];

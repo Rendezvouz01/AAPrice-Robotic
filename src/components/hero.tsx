@@ -2,28 +2,13 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { useEffect, useState } from "react";
-import type { ImagePlaceholder } from "@/lib/placeholder-images";
 
 export function Hero() {
-  const [heroImage, setHeroImage] = useState<ImagePlaceholder | undefined>(undefined);
-
-  useEffect(() => {
-    setHeroImage(PlaceHolderImages.find((p) => p.id === "hero-robotics"));
-  }, []);
-
-  if (!heroImage) {
-    return (
-      <section className="relative flex h-[60vh] min-h-[400px] w-full items-center justify-center bg-secondary md:h-[80vh]">
-        <div className="container text-center">
-          <h1 className="mb-4 text-4xl font-bold font-headline tracking-tight md:text-6xl lg:text-7xl">
-            Loading...
-          </h1>
-        </div>
-      </section>
-    );
-  }
+  const heroImage = {
+      description: "High-tech robotic arm in a futuristic factory setting.",
+      imageUrl: "https://images.unsplash.com/photo-1716191299980-a6e8827ba10b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb2JvdGljJTIwYXJtfGVufDB8fHx8MTc2NjYzNTA1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      imageHint: "robotic arm"
+    };
 
   return (
     <section className="relative h-[60vh] min-h-[400px] w-full text-white md:h-[80vh]">

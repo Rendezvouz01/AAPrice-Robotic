@@ -32,9 +32,21 @@ export function Header() {
           <span className="font-bold font-headline sm:hidden">AAPrice</span>
         </Link>
 
-        <div className="flex flex-1 items-center justify-end space-x-4">
+        <nav className="hidden flex-1 items-center justify-center space-x-6 md:flex">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="flex flex-1 items-center justify-end space-x-4 md:flex-initial">
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-            <SheetTrigger asChild>
+            <SheetTrigger asChild className="md:hidden">
               <Button variant="ghost" size="icon">
                 <Menu />
                 <span className="sr-only">Toggle Menu</span>
@@ -75,9 +87,7 @@ export function Header() {
               </div>
             </SheetContent>
           </Sheet>
-          <Button className="hidden md:flex" variant="outline">
-            Request a Quote
-          </Button>
+          <Button className="hidden md:inline-flex">Contact Sales</Button>
         </div>
       </div>
     </header>

@@ -26,19 +26,19 @@ export const products: Product[] = [
   {
     id: 'linear-robots',
     name: 'Linear Robots',
-    description: 'High-speed pick-and-place for printing presses and automated manufacturing lines.',
+    description: 'Sophisticated linear robotics built for extreme precision and adaptable integration in the printing and production sectors.',
     image: findImage('linear-robots'),
   },
   {
     id: '3d-printing',
     name: '3D Printing Machines',
-    description: 'Industrial-grade additive manufacturing for rapid prototyping and production parts.',
+    description: 'High-performance 3D printing machines optimized for industrial-scale reliability and rapid prototyping.',
     image: findImage('3d-printing'),
   },
   {
     id: 'accessories',
     name: 'Accessories',
-    description: 'A wide range of end-effectors, grippers, and vision systems to expand capabilities.',
+    description: 'Expand your capabilities with a wide range of accessories including end-effectors, grippers, and vision systems for seamless integration.',
     image: findImage('accessories'),
   },
 ];

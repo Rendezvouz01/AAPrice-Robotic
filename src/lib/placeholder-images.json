@@ -8,9 +8,9 @@
     },
     {
       "id": "linear-robots",
-      "description": "Linear robot arm moving parts on a conveyor belt.",
-      "imageUrl": "https://images.unsplash.com/photo-1662900547519-eeb199360d3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb252ZXlvciUyMGJlbHR8ZW58MHx8fHwxNzY2Njk2NzgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "conveyor belt"
+      "description": "A sophisticated linear robot system in a clean, modern manufacturing environment.",
+      "imageUrl": "https://images.unsplash.com/photo-1699313273177-a36c611488b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsaW5lYXIlMjByb2JvdHxlbnwwfHx8fDE3NzE1NDQzOTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "linear robot"
     },
     {
       "id": "3d-printing",
@@ -20,9 +20,9 @@
     },
     {
       "id": "accessories",
-      "description": "Close-up of a robotic gripper end-effector.",
-      "imageUrl": "https://images.unsplash.com/photo-1653570449667-bdbac4010198?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxyb2JvdGljJTIwZ3JpcHBlcnxlbnwwfHx8fDE3NjY2OTY3ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "robotic gripper"
+      "description": "A collection of precision robotic components and accessories on a workbench.",
+      "imageUrl": "https://images.unsplash.com/photo-1555621256-4c7b557b322a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyb2JvdGljJTIwY29tcG9uZW50c3xlbnwwfHx8fDE3NzE1NDQ0MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "robotic components"
     }
   ]
 }

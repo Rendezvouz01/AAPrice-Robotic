@@ -9,8 +9,8 @@
     {
       "id": "linear-robots",
       "description": "A sophisticated linear robot system in a clean, modern manufacturing environment.",
-      "imageUrl": "https://images.unsplash.com/photo-1699313273177-a36c611488b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsaW5lYXIlMjByb2JvdHxlbnwwfHx8fDE3NzE1NDQzOTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "linear robot"
+      "imageUrl": "https://images.unsplash.com/photo-1633423799298-22310211165a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxpbmR1c3RyaWFsJTIwcm9ib3R8ZW58MHx8fHwxNzcyMjYzNzUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial robot"
     },
     {
       "id": "3d-printing",
@@ -21,7 +21,7 @@
     {
       "id": "accessories",
       "description": "A collection of precision robotic components and accessories on a workbench.",
-      "imageUrl": "https://images.unsplash.com/photo-1555621256-4c7b557b322a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyb2JvdGljJTIwY29tcG9uZW50c3xlbnwwfHx8fDE3NzE1NDQ0MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1567443024551-f3162129712c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyb2JvdGljJTIwY29tcG9uZW50c3xlbnwwfHx8fDE3NzIyNjM4MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "robotic components"
     }
   ]

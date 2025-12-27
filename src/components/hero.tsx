@@ -16,16 +16,16 @@ export function Hero() {
 
   if (!heroImage) {
     return (
-       <section className="relative flex h-[60vh] min-h-[400px] w-full items-center justify-center bg-secondary md:h-[80vh]">
-         <div className="container text-center">
-            <h1 className="mb-4 text-4xl font-bold font-headline tracking-tight md:text-6xl lg:text-7xl">
-              Loading...
-            </h1>
-         </div>
-       </section>
+      <section className="relative flex h-[60vh] min-h-[400px] w-full items-center justify-center bg-secondary md:h-[80vh]">
+        <div className="container text-center">
+          <h1 className="mb-4 text-4xl font-bold font-headline tracking-tight md:text-6xl lg:text-7xl">
+            Loading...
+          </h1>
+        </div>
+      </section>
     );
   }
-  
+
   return (
     <section className="relative h-[60vh] min-h-[400px] w-full text-white md:h-[80vh]">
       <Image
@@ -37,7 +37,7 @@ export function Hero() {
         data-ai-hint={heroImage.imageHint}
       />
       <div className="absolute inset-0 bg-black/60" />
-      <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center">
+      <div className="container relative z-10 flex h-full flex-col items-start justify-center text-left">
         <h1 className="mb-4 text-4xl font-bold font-headline tracking-tight md:text-6xl lg:text-7xl">
           Advanced Automation for the Printing Industry
         </h1>
@@ -45,20 +45,12 @@ export function Hero() {
           Revolutionize your production with AAPrice's state-of-the-art robotic
           solutions, engineered for precision, speed, and reliability.
         </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
+        <div className="mt-8 flex flex-wrap justify-start gap-4">
           <Button
             size="lg"
-            className="bg-accent text-accent-foreground hover:bg-accent/90"
+            className="rounded-none bg-accent text-accent-foreground hover:bg-accent/90"
           >
-            Explore Solutions
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-white text-white hover:bg-white/10"
-          >
-            Contact Sales
+            Contact Us
           </Button>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
 export const metadata: Metadata = {
-  title: "AAPrice Robotics Landing Page",
+  title: "AAPrice Robotics",
   description: "Advanced Automation for the Printing Industry",
   icons: {
     icon: "/AAPRICE LOGO COLOR.png",

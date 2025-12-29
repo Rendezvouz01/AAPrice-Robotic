@@ -12,10 +12,10 @@ import {
 import { useState } from "react";
 
 const navLinks = [
-  { href: "#products", label: "Products" },
-  { href: "#", label: "Solutions" },
-  { href: "#", label: "About Us" },
-  { href: "/contact", label: "Contact" },
+  // { href: "#products", label: "Products" },
+  { href: "/", label: "Home" },
+  { href: "/founder", label: "The Visionary" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 export function Header() {
@@ -30,7 +30,7 @@ export function Header() {
           <Image
             src="/AAPRICE LOGO COLOR.png"
             alt="AAPrice Robotic Engineering Logo"
-            width={180} 
+            width={180}
             height={40}
             className="h-10 w-auto"
           />
@@ -55,17 +55,15 @@ export function Header() {
                 <nav className="flex flex-col space-y-4">
                   {navLinks.map((link) => (
                     <Link
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setIsSheetOpen(false)}
-                    className="text-xl font-semibold transition-colors hover:text-primary border-b pb-2"
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setIsSheetOpen(false)}
+                      className="text-xl font-semibold transition-colors hover:text-primary border-b pb-2"
                     >
                       {link.label}
                     </Link>
                   ))}
                 </nav>
-
-                  <Button className="w-full">Get a Quote</Button>
               </div>
             </SheetContent>
           </Sheet>

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 export function Hero() {
   const heroImage = {
       description: "High-tech robotic arm in a futuristic factory setting.",
-      imageUrl: "https://images.unsplash.com/photo-1716191299980-a6e8827ba10b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb2JvdGljJTIwYXJtfGVufDB8fHx8MTc2NjYzNTA1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      imageUrl: "/hero-background.jpg",
       imageHint: "robotic arm"
     };
 

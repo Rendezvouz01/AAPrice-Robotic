@@ -83,11 +83,10 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                 Schedule Technical Deep-Dive
                 <ArrowRight className="w-5 h-5" />
               </button>
-              <div className="flex items-center justify-center gap-6 py-4 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-                {/* Placeholder for small tech partner logos */}
+              {/* <div className="flex items-center justify-center gap-6 py-4 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
                 <span className="text-[10px] font-black tracking-widest uppercase">ISO-9001 CERTIFIED</span>
                 <span className="text-[10px] font-black tracking-widest uppercase">Lagos-Global Export</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { products } from "@/lib/products";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { CheckCircle2, ArrowRight, ShieldCheck, Zap, Cog, ChevronRight } from "lucide-react";
+import InquiryForm from "@/components/inquiryForm";
 
 export function generateStaticParams() {
   return products.map((product) => ({
@@ -118,6 +119,8 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           </div>
         </section> */}
       </main>
+
+      <InquiryForm/>
     </div>
   );
 }

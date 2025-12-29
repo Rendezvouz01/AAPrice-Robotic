@@ -38,7 +38,7 @@ export function Header() {
 
         {/* Global Hamburger Area */}
         <div className="flex items-center space-x-4">
-          <Button className="hidden md:inline-flex">Contact Sales</Button>
+          <Button className="hidden md:inline-flex">Contact Us</Button>
 
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
             <SheetTrigger asChild>

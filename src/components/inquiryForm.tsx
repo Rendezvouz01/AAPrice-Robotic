@@ -6,12 +6,11 @@ import { Loader2, CheckCircle } from "lucide-react";
 
 export default function MachineInquiryForm() {
 
-  const formId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_ID || "");
 
-  if (!formId) {
-    console.warn("Hey! You forgot to add NEXT_PUBLIC_FORMSPREE_ID to your .env.local file.");
+  if (!process.env.NEXT_PUBLIC_FORMSPREE_ID) {
+    console.warn("Variable is missing. Check Netlify.");
   }
-  const [state, handleSubmit] = useForm(formId || "Missing id");
 
   if (state.succeeded) {
     return (

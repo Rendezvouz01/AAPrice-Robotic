@@ -11,7 +11,7 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    id: 'ZMorph VX Multitool 3D Printer',
+    id: 'zmorph-vx-multitool-3d-printer',
     name: 'ZMorph VX Multitool 3D Printer',
     description: 'Advanced multi-axis fabrication system: Integrating high-resolution 3D printing, CNC, and laser engraving on a precision linear platform.',
     image: {

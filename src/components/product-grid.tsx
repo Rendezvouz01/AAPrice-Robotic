@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function ProductGrid() {
   return (
@@ -48,9 +49,11 @@ export function ProductGrid() {
                 <CardDescription className="flex-grow">
                   {product.description}
                 </CardDescription>
-                <Button variant="link" className="self-start p-0 mt-4">
-                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <Link href={`/products/${product.id}`}>
+                  <Button variant="link" className="self-start p-0 mt-4">
+                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}

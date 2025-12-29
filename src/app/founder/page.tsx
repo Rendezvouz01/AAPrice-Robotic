@@ -29,9 +29,6 @@ const FounderPage = () => {
                 to founding his own firm in 2014, his commitment to precision and innovation defines our future.
               </p>
             </div>
-            <button className="mt-8 bg-accent text-white text-xs font-bold py-3 px-8 uppercase tracking-widest hover:opacity-90 transition-all w-fit">
-              See The Visionary
-            </button>
           </div>
 
           {/* Asset Images: visionary 1, 2, 3 */}
@@ -58,7 +55,7 @@ const FounderPage = () => {
                 Aaron Chris Price is a Canadian-born visionary innovator with over two decades of experience spanning electrical engineering, industrial systems, robotics, and intelligent automation.
               </p>
               <p>
-                In 2003, Aaron served as Field Manager at **Suncor Energy**, where he led and supervised complex industrial electrical installations across North America and the Middle East. His work supported mission-critical energy infrastructure, requiring precision and cross-border operational intelligence.
+                In 2003, Aaron served as Field Manager at Suncor Energy, where he led and supervised complex industrial electrical installations across North America and the Middle East. His work supported mission-critical energy infrastructure, requiring precision and cross-border operational intelligence.
               </p>
             </div>
             <div className="relative aspect-video rounded-lg overflow-hidden border-2 border-accent">
@@ -71,13 +68,13 @@ const FounderPage = () => {
             <div className="space-y-4">
               <h4 className="font-bold uppercase tracking-widest text-accent text-sm">Academic Foundation</h4>
               <p className="text-slate-600">
-                Aaron holds a **Bachelor’s Degree in Electrical Engineering from University of Toronto** and a **Master’s Degree in Robotics and Machine Learning from University at Albany**. His foundation bridges theory with real-world industrial impact.
+                Aaron holds a Bachelor’s Degree in Electrical Engineering from University of Toronto and a Master’s Degree in Robotics and Machine Learning from University at Albany. His foundation bridges theory with real-world industrial impact.
               </p>
             </div>
             <div className="space-y-4">
               <h4 className="font-bold uppercase tracking-widest text-accent text-sm">Manufacturing Excellence</h4>
               <p className="text-slate-600">
-                Since founding his firm in 2014, Aaron has maintained long-standing manufacturing partnerships in **China**, built over more than a decade—relationships grounded in trust, technical alignment, and production excellence.
+                Since founding his firm in 2014, Aaron has maintained long-standing manufacturing partnerships in China, built over more than a decade, relationships grounded in trust, technical alignment, and production excellence.
               </p>
             </div>
           </div>

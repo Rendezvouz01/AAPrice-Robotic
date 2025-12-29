@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import Link from 'next/link';
 
 const Founder = () => {
   return (
@@ -11,9 +12,11 @@ const Founder = () => {
             <p className="text-muted-foreground">
               Aaron Chris Price, is a pioneering force in engineering and industrial innovation. With over two decades of expertise in electrical engineering, robotics, and intelligent automation, he blends deep technical knowledge with global manufacturing leadership to deliver future-proof solutions. His work is driven by precision, built on experience, and focused on defining the next era of intelligent machines.
             </p>
-            <button className="mt-6 bg-primary text-primary-foreground py-2 px-4 rounded-md hover:bg-primary/90 transition-colors">
-              Learn More
-            </button>
+            <Link href="/founder">
+              <button className="mt-6 bg-primary text-primary-foreground py-2 px-4 rounded-md hover:bg-primary/90 transition-colors">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
         <div className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-4 md:pl-8">

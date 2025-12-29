@@ -6,6 +6,9 @@ import { Footer } from "@/components/layout/footer";
 export const metadata: Metadata = {
   title: "AAPrice Robotics Landing Page",
   description: "Advanced Automation for the Printing Industry",
+  icons: {
+    icon: "/AAPRICE LOGO COLOR.png",
+  },
 };
 
 export default function RootLayout({

@@ -1,13 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { Cpu, Menu, X } from "lucide-react";
+import Image from "next/image";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
-  SheetClose,
 } from "@/components/ui/sheet";
 import { useState } from "react";
 
@@ -26,17 +26,21 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between px-4">
 
         {/* Logo Section */}
-        <Link href="/" className="flex items-center space-x-2">
-          <Cpu className="h-6 w-6 text-primary" />
-          <span className="font-bold font-headline">AAPrice Robotic</span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/AAPRICE LOGO COLOR.png"
+            alt="AAPrice Robotic Engineering Logo"
+            width={180} 
+            height={40}
+            className="h-10 w-auto"
+          />
         </Link>
 
         {/* Global Hamburger Area */}
         <div className="flex items-center space-x-4">
-        <Button className="hidden md:inline-flex">Contact Sales</Button>
+          <Button className="hidden md:inline-flex">Contact Sales</Button>
 
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-            {/* REMOVED 'md:hidden' so it stays visible on desktop */}
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="focus-visible:ring-0">
                 <Menu className="h-6 w-6" />
@@ -60,7 +64,6 @@ export function Header() {
                 </nav>
 
                   <Button className="w-full">Get a Quote</Button>
-                {/* Extra CTA inside the menu for desktop users */}
               </div>
             </SheetContent>
           </Sheet>

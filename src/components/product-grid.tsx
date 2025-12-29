@@ -17,7 +17,7 @@ export function ProductGrid() {
       <div className="container">
         <div className="mb-12 text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            Our Product Categories
+            Our Available Products
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
             Engineered for excellence, our robotic systems are designed to

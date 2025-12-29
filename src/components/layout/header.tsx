@@ -15,7 +15,7 @@ const navLinks = [
   { href: "#products", label: "Products" },
   { href: "#", label: "Solutions" },
   { href: "#", label: "About Us" },
-  { href: "#", label: "Contact" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -38,7 +38,9 @@ export function Header() {
 
         {/* Global Hamburger Area */}
         <div className="flex items-center space-x-4">
-          <Button className="hidden md:inline-flex">Contact Us</Button>
+          <Link href="/contact">
+            <Button className="hidden md:inline-flex">Contact Us</Button>
+          </Link>
 
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
             <SheetTrigger asChild>

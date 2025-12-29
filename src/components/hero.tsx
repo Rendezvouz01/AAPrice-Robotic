@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Hero() {
   const heroImage = {
@@ -29,12 +30,14 @@ export function Hero() {
           Sophisticated linear robotics and high-performance 3D printing machines specifically optimized for the printing and production sectors: built for extreme precision, adaptable integration, and industrial-scale reliability.
         </p>
         <div className="mt-8 flex flex-wrap justify-start gap-4">
-          <Button
-            size="lg"
-            className="rounded-none bg-accent text-accent-foreground hover:bg-accent/90"
-          >
-            Contact Us
-          </Button>
+          <Link href="/contact">
+            <Button
+              size="lg"
+              className="rounded-none bg-accent text-accent-foreground hover:bg-accent/90"
+            >
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

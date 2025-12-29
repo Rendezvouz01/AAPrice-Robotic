@@ -18,29 +18,28 @@ export function ProductGrid() {
       {/* SECTION 1: BRAND STORY */}
       <section className="py-16 sm:py-20 border-b bg-slate-50/50">
   <div className="container mx-auto px-6 text-center">
-    <div className="max-w-3xl mx-auto">
-      <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-6">
-        The Intersection of Precision and Production.
-      </h2>
-      <p className="text-base sm:text-lg text-slate-500 leading-relaxed">
-        <span className="font-semibold text-slate-900">AAPrice Robotics</span> stands at the intersection of sophisticated linear motion and high-performance additive manufacturing. While traditional systems focus on simple automation, AAPrice delivers high-performance 3D printing machines specifically optimized for the rigors of the industrial production sector. Our systems are engineered for extreme precision, adaptable integration, and a level of industrial-scale reliability that guarantees high-performance output with zero compromise on flexibility.
-      </p>
-    </div>
+  <div className="max-w-3xl mx-auto">
+  <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-6">
+    The Intersection of Precision and Production.
+  </h2>
+  <p className="text-base sm:text-lg text-slate-500 leading-relaxed">
+    Architecting the future of industrial 3D printing through high-velocity linear robotics and large-scale additive systems. Our machines deliver micron-level layer precision and seamless workflow integration for high-volume manufacturing with zero compromise on part integrity.
+  </p>
+</div>
   </div>
 </section>
 
       {/* SECTION 2: PRODUCT GRID */}
       <section id="products" className="py-16 sm:py-24">
         <div className="container mx-auto px-6">
-          <div className="mb-12 text-center">
-            <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-              Our Available Products
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-              Engineered for excellence, our robotic systems are designed to
-              integrate seamlessly into your workflow.
-            </p>
-          </div>
+        <div className="mb-12 text-center">
+  <h2 className=" text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl uppercase">
+    Our Products
+  </h2>
+  <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-500">
+    Leveraging advanced linear motion and industrial-grade architecture, our 3D printing systems deliver high-performance automation designed for seamless workflow integration and extreme durability.
+  </p>
+</div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {products.map((product) => (
